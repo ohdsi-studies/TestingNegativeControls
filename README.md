@@ -1,4 +1,4 @@
-StudyRepoTemplate
+Testing Negative Controls
 =================
 
 An OHDSI study repository is expected to have a README.md file where the header conforms to a standard. A template README file is provided here:
