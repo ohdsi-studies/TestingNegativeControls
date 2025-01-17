@@ -1,0 +1,30 @@
+default:
+  studyName: "epi555"
+  resultsDatabaseSchema: "epi555"
+  rootFolder: "D:/programs/legend"
+  andromeda: !expr options(andromedaTempFolder = "D:/")
+  studySpecificationFileName: "analysisSpecifications.json"
+  keyringName: "ohda"
+  keyringConnectionStringPrefix: "redShiftConnectionStringOhda"
+
+# Comment out values you do not need but do 
+# not add any other key values or change the spacing/formatting
+# in this section. You may reorder them if easier.
+studySettings:
+  cdm:
+    OptumDod: cdm_optum_extended_dod
+  cohorts:
+    cohortIds: [12676,12672,12677,12678,12679]
+  cohortDiagnostics:
+    cohortIds: [12676,12672,12677,12678,12679]
+  pheValuator:
+    toEvaluateCohortIds: [0]
+    xSpecCohortId: 0
+    xSensCohortId: 0
+    prevalenceCohortId: 0
+    excludedCovariateConceptIds: [      
+      #ACEi
+      1308216,1310756,1331235,1334456,1335471,1340128,1341927,1342439,1363749,1373225,
+      #TZD
+      907013,974166,978555,1395058]
+    analysisListFileName: "PheValuatorAnalysisList.json"
